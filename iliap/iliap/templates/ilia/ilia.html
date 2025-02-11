@@ -5,7 +5,11 @@
     </head>
     <body>
         <div class="navbar">
-              <a>خانه</a>
+            {% for item in course %}
+            {% block title %}
+            <a style="font-siza:18px" href="{% {% url 'detail' item.id %}%}">{{item.name}}خانه</a>
+            {% endfor %} 
+            {% endblock  %}
               <center>
                 <a>آموزشگاه ایلیا</a>
               </center>

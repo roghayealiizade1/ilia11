@@ -17,7 +17,7 @@ def course(request):
     id=request.GET.get('id','0')
     for item in c_list:
         if item['id'] in c_list:
-            return render(request,'')
+            return render(request,'ilia/ilia.html')
         else :
-            return render(request,'')
-            
+            return render(request,'notfoundapp/4041.html')
+              
